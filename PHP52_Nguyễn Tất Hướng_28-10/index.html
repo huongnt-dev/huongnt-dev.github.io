@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NXB Khoa Học Xã Hội</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.bundle.js">
+    <link rel="stylesheet" href="js/jquery-3.5.1.js">
+    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+</head>
+<body>
+	<script>
+    $(document).ready(function () {
+        $('#btn-prev').click(function (event) {
+            var slide_sau = $('.active').next();
+            if (slide_sau.length != 0) {
+                $('.active').addClass('bien-mat-ben-trai').one('webkitAnimationEnd', function (event) {
+                    $('.bien-mat-ben-trai').removeClass('bien-mat-ben-trai').removeClass(
+                        'active');
+                });
+                slide_sau.addClass('active').addClass('di-vao-ben-phai').one('webkitAnimationEnd',
+                    function (event) {
+                        $('.di-vao-ben-phai').removeClass('di-vao-ben-phai');
+                    });
+            } else {
+                $('.active').addClass('bien-mat-ben-trai').one('webkitAnimationEnd', function (event) {
+                    $('.bien-mat-ben-trai').removeClass('bien-mat-ben-trai').removeClass(
+                        'active');
+                });
+                $('.slide:first-child').addClass('active').addClass('di-vao-ben-phai').one(
+                    'webkitAnimationEnd',
+                    function (event) {
+                        $('.di-vao-ben-phai').removeClass('di-vao-ben-phai');
+                    });
+            }
+        });
+    });
+
+
+
+
+
+
+    $(document).ready(function () {
+        $('#btn-next').click(function (event) {
+            var slide_sau = $('.active').next();
+            if (slide_sau.length != 0) {
+                $('.active').addClass('bien-mat-ben-phai').one('webkitAnimationEnd', function (event) {
+                    $('.bien-mat-ben-phai').removeClass('bien-mat-ben-phai').removeClass(
+                        'active');
+                });
+                slide_sau.addClass('active').addClass('di-vao-ben-trai').one('webkitAnimationEnd',
+                    function (event) {
+                        $('.di-vao-ben-trai').removeClass('di-vao-ben-trai');
+                    });
+            } else {
+                $('.active').addClass('bien-mat-ben-phai').one('webkitAnimationEnd', function (event) {
+                    $('.bien-mat-ben-phai').removeClass('bien-mat-ben-phai').removeClass(
+                        'active');
+                });
+                $('.slide:first-child').addClass('active').addClass('di-vao-ben-trai').one(
+                    'webkitAnimationEnd',
+                    function (event) {
+                        $('.di-vao-ben-trai').removeClass('di-vao-ben-trai');
+                    });
+            }
+        });
+    });
+</script>
+<div class="wrapper">
+	<div class="banner-top">
+		<ul>
+			<li><a href="#">Liên hệ</a></li>
+			<li><a href="#">Sơ đồ website</a></li>
+			<li><a href="#">Email</a></li>
+			<li><a href="#">Đăng nhập</a></li>
+			<li><img src="images/laco.jpg" width="35" align="center"></li>
+		</ul>
+	</div>
+	<div class="banner"><img src="images/banner.jpg">
+    		<div class="timkiem">
+    			<ul>
+    				<li><input type="search" placeholder="Nhập từ khóa tìm kiếm">
+    					<input id="icon" type="image" src="images/icon.jpg" />
+    				</li>
+    				<li><a href="#">Tìm kiếm nâng cao</a></li>
+    			</ul>
+    		</div>
+	</div>
+	<nav class="menu">
+		<ul>
+			<li id="on"><a href="#">TRANG CHỦ</a></li>
+			<li><a href="#">GIỚI THIỆU</a>
+				<ul class="submenu">
+					<li id="in"><a href="#">Chức năng</a></li>
+					<li><a href="#">Nhiệm vụ</a></li>
+					<li><a href="#">Lịch sử phát triển</a></li>
+				</ul>
+			</li>
+			<li><a href="#">TIN TỨC-SỰ KIỆN</a>
+				<ul class="submenu">
+					<li id="in2"><a href="#">Hoạt động xuất bản</a></li>
+					<li><a href="#">Hợp tác quốc tế</a></li>
+					<li><a href="#">Tin khác</a></li>
+				</ul>
+			</li>
+			<li><a href="#">SÁCH MỚI</a></li>
+			<li><a href="#">LIÊN HỆ</a></li>
+		</ul>
+		<img src="images/menu-imgb.jpg">
+	</nav>
+	<div class="list-img">
+            <div class="khoi-slide">
+                <div class="cac-slide">
+                    <div class="slide active">
+                        <ul>
+                            <li><a href="#"><img src="images/list1.1.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/list1.2.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/list1.3.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/list1.4.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/list1.5.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/list1.6.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/list1.7.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/list1.8.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="slide">
+                        <ul>
+                            <li><a href="#"><img src="images/list1.9.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/list1.1.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="img/list1.2.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/list1.3.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/list1.4.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/list1.5.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/list1.6.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/list1.7.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="slide">
+                        <ul>
+                            <li><a href="#"><img src="images/list1.8.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/list1.9.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/list1.1.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/list1.2.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/list1.3.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/list1.4.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/list1.5.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/list1.6.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+             <a href="#">
+                <div class="arrow-left" id="btn-prev"> </div>
+            </a>
+
+
+
+            <a href="#">
+                <div class="arrow-right" id="btn-next"></div>
+            </a>
+        </div>
+	<div class="middle">
+		<div class="left">
+			<div class="danhmucsach">
+				<h3>Danh mục sách</h3>
+				<ul>
+					<li><a href="#">Triết học</a></li>
+					<li><a href="#">Kinh tế</a></li>
+					<li><a href="#">Luật</a></li>
+					<li><a href="#">Tâm lý</a></li>
+					<li><a href="#">Xã hội học</a></li>
+					<li><a href="#">Gia đình và giới</a></li>
+					<li><a href="#">Văn học</a></li>
+					<li><a href="#">Ngôn ngữ</a></li>
+					<li><a href="#">Hán Nôm</a></li>
+					<li><a href="#">Lịch sử</a></li>
+					<li><a href="#">Dân tộc học</a></li>
+					<li><a href="#">Khảo cổ</a></li>
+					<li><a href="#">Văn hóa</a></li>
+					<li><a href="#">Tôn giáo</a></li>
+					<li><a href="#">Từ điển</a></li>
+					<li><a href="#">Nghiên cứu quốc tế</a></li>
+				</ul>
+			</div>
+			<div class="timkiem">
+				<h3>Tìm kiếm sách</h3>
+				<ul>
+					<li><input type="text" id="search" value="Nhập tên sách hoặc từ khóa liên quan"></li>
+					<li><select name="select" id="select">
+						<option selected="selected" value="0">Danh mục sách</option>
+						<option value="1">Triết học</option>
+						<option value="2">Kinh tế</option>
+						<option value="3">Luật</option>
+						<option value="4">Tâm lý</option>
+						<option value="5">Xã hội học</option>
+						<option value="6">Gia đình và Giới</option>
+						<option value="7">Văn học</option>
+						<option value="8">Ngôn ngữ</option>
+						<option value="9">Hán Nôm</option>
+						<option value="10">Lịch sử</option>
+						<option value="11">Dân tộc học</option>
+						<option value="12">Khảo cổ</option>
+						<option value="13">Văn hóa</option>
+						<option value="14">Tôn giáo</option>
+						<option value="15">Từ điển</option>
+						<option value="16">Nghiên cứu quốc tế</option>
+						<option value="17">Châu Âu</option>
+						<option value="18">Châu Mỹ</option>
+						<option value="19">Châu Phi - Trung Đông</option>
+						<option value="20">Đông Bắc Á</option>
+						<option value="21">Đông Nam Á</option>
+						<option value="22">Trung Quốc</option>
+						<option value="23">Ấn Độ và Tây Nam Á</option>
+
+						</select>
+					</li>
+					<li><input type="text" id="search-tg" value="Tên tác giả"></li>
+					<li><input type="text" id="search-ms" value="Mã sách"></li>
+					<li><button type="button" id="button">Tìm kiếm</button></li>
+				</ul>
+			</div>
+			<div class="lienket">
+				<h3 >Liên kết website</h3>
+				<input type="text" id="lk" value="Liên kết website">
+			</div>
+			<img id="img" src="images/right-img.jpg">
+		</div>
+		<div class="main">
+			<img id="main-img" src="images/gioithieu-bn.jpg">
+			<div class="sp1">
+				<div class="sp1-img"><img src="images/main-img1.jpg"></div>
+				<div class="main-sp1">
+					<ul>
+						<li>
+							<p id="thongtinsp">
+								<strong id="tieude">Một số vấn đề lý luận ngôn ngữ học và tiếng Việt</strong><br>
+								Tác giả: <strong id="nxb">Nhà xuất bản KHXH</strong><br>
+								Giá sách: <strong id="gia">532.000.000 </strong>triệu<br>
+								ĐTTS ghi: Viện Khoa học xã hội Việt Nam. Viện Từ điển học và Bách khoa thư Việt Nam. Từ khóa: 1. Tiếng Việt  2. Ngôn ngữ học  3. Tác phẩm  4. Tác giả  5. Từ điển học  
+							</p>
+						</li>
+						<li><a href="#">Mua sách này</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sp1">
+				<div class="sp1-img"><img src="images/main-img2.jpg"></div>
+				<div class="main-sp1">
+					<ul>
+						<li>
+							<p id="thongtinsp">
+								<strong id="tieude">Một số vấn đề lý luận ngôn ngữ học và tiếng Việt</strong><br>
+								Tác giả: <strong id="nxb">Nhà xuất bản KHXH</strong><br>
+								Giá sách: <strong id="gia">532.000.000 </strong>triệu<br>
+								ĐTTS ghi: Viện Khoa học xã hội Việt Nam. Viện Từ điển học và Bách khoa thư Việt Nam. Từ khóa: 1. Tiếng Việt  2. Ngôn ngữ học  3. Tác phẩm  4. Tác giả  5. Từ điển học  
+							</p>
+						</li>
+						<li><a href="#">Mua sách này</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sp1">
+				<div class="sp1-img"><img src="images/main-img3.jpg"></div>
+				<div class="main-sp1">
+					<ul>
+						<li>
+							<p id="thongtinsp">
+								<strong id="tieude">Một số vấn đề lý luận ngôn ngữ học và tiếng Việt</strong><br>
+								Tác giả: <strong id="nxb">Nhà xuất bản KHXH</strong><br>
+								Giá sách: <strong id="gia">532.000.000 </strong>triệu<br>
+								ĐTTS ghi: Viện Khoa học xã hội Việt Nam. Viện Từ điển học và Bách khoa thư Việt Nam. Từ khóa: 1. Tiếng Việt  2. Ngôn ngữ học  3. Tác phẩm  4. Tác giả  5. Từ điển học  
+							</p>
+						</li>
+						<li><a href="#">Mua sách này</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sp1">
+				<div class="sp1-img"><img src="images/main-img1.jpg"></div>
+				<div class="main-sp1">
+					<ul>
+						<li>
+							<p id="thongtinsp">
+								<strong id="tieude">Một số vấn đề lý luận ngôn ngữ học và tiếng Việt</strong><br>
+								Tác giả: <strong id="nxb">Nhà xuất bản KHXH</strong><br>
+								Giá sách: <strong id="gia">532.000.000 </strong>triệu<br>
+								ĐTTS ghi: Viện Khoa học xã hội Việt Nam. Viện Từ điển học và Bách khoa thư Việt Nam. Từ khóa: 1. Tiếng Việt  2. Ngôn ngữ học  3. Tác phẩm  4. Tác giả  5. Từ điển học  
+							</p>
+						</li>
+						<li><a href="#">Mua sách này</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sp1">
+				<div class="sp1-img"><img src="images/main-img2.jpg"></div>
+				<div class="main-sp1">
+					<ul>
+						<li>
+							<p id="thongtinsp">
+								<strong id="tieude">Một số vấn đề lý luận ngôn ngữ học và tiếng Việt</strong><br>
+								Tác giả: <strong id="nxb">Nhà xuất bản KHXH</strong><br>
+								Giá sách: <strong id="gia">532.000.000 </strong>triệu<br>
+								ĐTTS ghi: Viện Khoa học xã hội Việt Nam. Viện Từ điển học và Bách khoa thư Việt Nam. Từ khóa: 1. Tiếng Việt  2. Ngôn ngữ học  3. Tác phẩm  4. Tác giả  5. Từ điển học  
+							</p>
+						</li>
+						<li><a href="#">Mua sách này</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sp1">
+				<div class="sp1-img"><img src="images/main-img3.jpg"></div>
+				<div class="main-sp1">
+					<ul>
+						<li>
+							<p id="thongtinsp">
+								<strong id="tieude">Một số vấn đề lý luận ngôn ngữ học và tiếng Việt</strong><br>
+								Tác giả: <strong id="nxb">Nhà xuất bản KHXH</strong><br>
+								Giá sách: <strong id="gia">532.000.000 </strong>triệu<br>
+								ĐTTS ghi: Viện Khoa học xã hội Việt Nam. Viện Từ điển học và Bách khoa thư Việt Nam. Từ khóa: 1. Tiếng Việt  2. Ngôn ngữ học  3. Tác phẩm  4. Tác giả  5. Từ điển học  
+							</p>
+						</li>
+						<li><a href="#">Mua sách này</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="thutu">
+				<ul>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+					<li><a href="#">...</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="right">
+			<div class="hotro">
+				<ul>
+					<li id="hotro-sdt"><strong id="sdt">1900 999999</strong></li>
+					<li><a href="#">mail nhà xuất bản KHXH</a></li>
+					<li><a href="#">Nhà xuất bản KHXH</a></li>
+					<li><a href="#">Nhà xuất bản KHXH</a></li>
+				</ul>
+			</div>
+			<div class="tintuc">
+				<div class="tintuc-img">
+					<img src="images/tintuc-bg.jpg">
+				</div>
+				<div class="tintuc-tt">
+					<div class="tintuc-img1">
+						<img src="images/tintuc-img1.jpg">
+					</div>
+					<div class="tintuc-p"><a href="#">Nhà sách Trí Tuệ sắp phát hành cuốn "Tuyển tập thơ, đồng dao, câu đố dành cho thiếu nhi"</a></div>
+				</div>
+				<div class="tintuc-tt">
+					<div class="tintuc-img1">
+						<img src="images/tintuc-img2.jpg">
+					</div>
+					<div class="tintuc-p"><a href="#">Nhà sách Trí Tuệ sắp phát hành cuốn "Tuyển tập thơ, đồng dao, câu đố dành cho thiếu nhi"</a></div>
+				</div>
+				<div class="tintuc-tt">
+					<div class="tintuc-img1">
+						<img src="images/tintuc-img3.jpg">
+					</div>
+					<div class="tintuc-p"><a href="#">Nhà sách Trí Tuệ sắp phát hành cuốn "Tuyển tập thơ, đồng dao, câu đố dành cho thiếu nhi"</a></div>
+				</div>
+			</div>
+			<div class="sapsach">
+				<div class="sapsach-ft">
+					<img src="images/sachsap-ft.jpg">
+				</div>
+				<div class="sachsap-m">
+					<div class="sachsap-m-img">
+						<img src="images/sachsap-img1.jpg">
+					</div >
+					<div class="sachsap-m-p">
+						<p>Lịch sử Đông Nam Á / Trần Khánh (ch.b.), Hoàng Anh Tuấn, Nguyễn Văn Kim... <br>
+						Tác giả: <strong>Nhà xuất bản</strong><br>
+						Giá: <strong id="gia">532.000.000</strong> triệu</p>
+						<div class="sachsap-m-timkiem"><a href="#">Mua sách này</a></div>
+					</div>
+				</div>
+				<div class="sachsap-m">
+					<div class="sachsap-m-img">
+						<img src="images/sapsach-img2.jpg">
+					</div >
+					<div class="sachsap-m-p">
+						<p>Lịch sử Đông Nam Á / Trần Khánh (ch.b.), Hoàng Anh Tuấn, Nguyễn Văn Kim... <br>
+						Tác giả: <strong>Nhà xuất bản</strong><br>
+						Giá: <strong id="gia">532.000.000</strong> triệu</p>
+						<div class="sachsap-m-timkiem"><a href="#">Mua sách này</a></div>
+					</div>
+				</div>
+				<div class="sachsap-m">
+					<div class="sachsap-m-img">
+						<img src="images/sapsach.img3.jpg">
+					</div >
+					<div class="sachsap-m-p">
+						<p>Lịch sử Đông Nam Á / Trần Khánh (ch.b.), Hoàng Anh Tuấn, Nguyễn Văn Kim... <br>
+						Tác giả: <strong>Nhà xuất bản</strong><br>
+						Giá: <strong id="gia">532.000.000</strong> triệu</p>
+						<div class="sachsap-m-timkiem"><a href="#">Mua sách này</a></div>
+					</div>
+				</div>
+				<div class="sachsap-m">
+					<div class="sachsap-m-img">
+						<img src="images/sapsach-img2.jpg">
+					</div >
+					<div class="sachsap-m-p">
+						<p>Lịch sử Đông Nam Á / Trần Khánh (ch.b.), Hoàng Anh Tuấn, Nguyễn Văn Kim... <br>
+						Tác giả: <strong>Nhà xuất bản</strong><br>
+						Giá: <strong id="gia">532.000.000</strong> triệu</p>
+						<div class="sachsap-m-timkiem"><a href="#">Mua sách này</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-bg">
+			<img src="images/footer-bg.jpg">
+		</div>
+		<div class="footer-main">
+			<div class="quanly">
+				<h3>QUẢN LÝ TÀI KHOẢN</h3>
+				<ul>
+					<li><a href="#">Tạo tài khoản</a></li>
+					<li><a href="#">Đăng nhập</a></li>
+					<li><a href="#">Thay đổi thông tin tài khoản</a></li>
+					<li><a href="#">Quên mật khẩu</a></li>
+					<li><a href="#">Lịch sử mua hàng</a></li>
+				</ul>
+			</div>
+			<div class="trogiup">
+				<h3>TRỢ GIÚP</h3>
+				<ul>
+					<li><a href="#">Quy định sử dụng</a></li>
+					<li><a href="#">Hướng dẫn mua hàng</a></li>
+					<li><a href="#">Phương thức thanh toán</a></li>
+					<li><a href="#">Phương thức vận chuyển</a></li>
+					<li><a href="#">Các câu hỏi thường gặp F.A.Q</a></li>
+				</ul>
+			</div>
+			<div class="gioithieu">
+				<h3>GIỚI THIỆU NHÀ XUẤT BẢN</h3>
+				<ul>
+					<li><a href="#">Giới thiệu nhà xuất bản</a></li>
+					<li><a href="#">Liên hệ</a></li>
+					<li><a href="#">Góc bào chí</a></li>
+					<li><a href="#">Sơ đồ website</a></li>
+				</ul>
+			</div>
+		</div>
+		<h2>NHÀ XUẤT BẢN KHOA HỌC XÃ HỘi</h2>
+		<div class="footer-bottom">
+			<div class="footer-bottom-a">
+				<p>Social Sciences Publishing House<br>
+				36 Hàng Chuối - Hai Bà Trưng - Hà Nội <br> 
+				Tel: 04.39719073 - Fax: 04.39719071 - Email: nxbkhxh@gmail.com</p>
+			</div>
+			<div class="footer-bottom-b">
+				<h4>CHI NHÁNH NHÀ XUẤt BẢN KHOA HỌC XÃ HỘI</h4>
+				<p>57 Sương Nguyệt Ánh  - Phường Bến Thành - Quận I - TP Hồ Chí Minh<br>
+				Tel: 08.38394948 - Fax: 08.38394948</p>
+			</div>
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>

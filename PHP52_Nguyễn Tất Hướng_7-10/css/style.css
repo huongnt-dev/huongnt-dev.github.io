@@ -1,0 +1,339 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: arial;
+	font-size: 12px;
+}
+.wrapper
+{
+	margin: auto;
+	width: 1000px;
+}
+.menu-top 
+{
+	display: flex;
+	line-height: 30px;
+	background: url('../images/menu-top.jpg');
+}
+.menu-left 
+{
+	text-align: center;
+	width: 185px; 
+}
+.menu-right 
+{
+	margin-top: -3px;
+	width: 815px;
+	font-weight: bold;
+}
+.menu-right ul
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.menu-right ul li
+{
+	display: inline;
+	border-right: 2px solid #dd4e01;
+}
+.menu-right a
+{
+	text-decoration:none;
+	color: #dd4e01;
+	padding: 10px;
+}
+.menu-right ul li:last-child
+{
+	border-right-width: 0px;
+}
+.menu-right a:hover
+{
+	background: #dd4e01;
+	color: white;
+}
+.left 
+{
+	width: 180px;
+}
+.category
+{
+	border:1px solid #ffffff;
+	margin-top: -6px; 
+}
+.category ul
+{
+	margin:0px;
+	padding: 0px;
+	list-style: none;
+	width: 183px;
+}
+.category ul li
+{
+	list-style: none;
+	background: url('../images/category.jpg'); 
+	background-repeat: no-repeat; 
+	margin-top: 1px;
+	line-height: 21px; 
+}
+.category ul li a
+{
+	text-align:center;
+}
+.category a
+{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	padding-left: 30px;
+}
+.category a:hover
+{
+	color:#dd4e01; 
+}
+.middle
+{
+	display: flex;
+}
+.timkiem
+{
+	display: flex;
+}
+.in1
+{
+	width: 140px;
+
+}
+.sanphamtieubieu
+{
+	margin-top:9px;
+}
+.sanphamtieubieu-body
+{
+	background: url('../images/sanphamtieubieu-bg.jpg');
+	margin-top: -3px; 
+}
+.sanphamtieubieu-body ul
+{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+.sanphamtieubieu-footer
+{
+	margin-top: -2px;
+}
+.sanphamtieubieu ul li
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.sanphamtieubieu-body img
+{
+	border: 1px solid #bbbbbb;
+}
+.hotline
+{
+  padding:0px;
+  margin: 0px;
+}
+.hotline ul
+{
+	display: flex;
+}
+.hotline ul li
+{
+	list-style: none;
+	float: left;
+}
+.hotline img
+{
+	padding-right: 10px;
+	padding-left: -25px;
+}
+.menu-bottom
+{
+	margin-top: 15px;
+	background: #ffffff;
+}
+.menu-bottom ul
+{
+	padding: 0px;
+	margin:0px;
+	list-style: none;
+	text-align: center;
+}
+.menu-bottom ul li
+{
+	border-right: 1px solid  ;
+	display: inline;
+	line-height: 20px;
+
+}
+.menu-bottom a
+{
+	text-decoration: none;
+	color:#b5930b;
+	padding: 15px;
+}
+.menu-bottom
+{
+	border-top:1px solid #b5930b;
+}
+footer
+{
+	line-height: 12px;
+	text-align: center;
+	background: #e9c946;
+	color: #ffffff;
+}
+.sanphammoi
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.sanphammoi-body
+{
+	padding-top: 10px;
+}
+.sanphammoi-body ul
+{
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+	width: 613px;
+
+}
+.sanphammoi-body ul li
+{
+	border: 1px solid #e3c54d;
+	width: 140px;
+	height: 224px;
+	border-radius: 10px; 
+	margin-left: 10px;
+	list-style: none;
+	text-align-last: center;
+}
+.sanphammoi-body p
+{
+	padding-top: -10px;
+	font-size: 10px;
+}
+.sanphammoi-body ul li img
+{
+	padding-top: 10px;
+	width: 130px;
+}
+button
+{
+	border:0px;
+	background: #ffffff;
+	color: #f55701;
+	border-right: 1px solid #f55701
+}
+button:last-child
+{
+	border-right-width: 0px;
+}
+.tintuc
+{
+	background: url('../images/tintuc.jpg');
+	background-repeat: no-repeat;
+	padding-top: 20px;
+}
+.tintuc ul 
+{
+	padding-left: 10px; 
+	padding-top: 5px;
+}
+.tintuc ul li
+{
+	list-style: none;
+	width: 600px;
+	padding-bottom: 10px;
+}
+.description
+{
+	display:flex;
+}
+.description p
+{
+	padding-left: 10px;
+}
+.button
+{
+	padding-left: 530px;
+}
+.title a
+{
+	text-decoration:none;
+	color: black;
+}
+.hoidap
+{
+	background: url('../images/hoidap.jpg');
+	background-repeat: no-repeat;
+	line-height: 25px;
+	margin-top:-10px;
+
+}
+.hoidap ul
+{
+	list-style: none;
+}
+.hoidap ul li 
+{
+	padding-right: 20px;
+	margin-left: -20px; 
+}
+.hoidap ul li a
+{
+	text-decoration:none;
+	color: black;
+	font-size: 11px;
+}
+.slide
+{
+	padding-left: 8px;
+	padding-right: 16px; 
+}
+.checkemail {
+	margin-top: 20px;
+	background: url('../images/checkemail.jpg');
+	background-repeat: no-repeat;
+}
+.checkemail ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	height: 181px;
+}
+.email {
+	margin-top: 44px;
+	margin-left: 6px;
+}
+.password {
+	margin-top: -3px;
+	margin-left: 4px;
+}
+.login {
+	margin-top: 10px;
+	width: 70px;
+	border-radius: 10px;
+	margin-left: 50px;
+}
+.quangcao
+{
+	width: 185px;
+	padding-top: 20px;
+}
+.quangcao img
+{
+	background:url('../images/quangcao.jpg');
+	background-repeat: no-repeat;
+	padding-top: 26px;
+	padding-left: 7px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}

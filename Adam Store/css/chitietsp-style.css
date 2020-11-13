@@ -1,0 +1,335 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+	width: 100%
+}
+.wrapper
+{
+	width: 100%;
+	font-family:  Helvetica;
+}
+.banner 
+{
+	display: flex;
+	background: #f6f6f6;
+
+}
+.banner .banner-timkiem ul
+{
+	display: flex;
+}
+.banner .banner-timkiem ul li
+{
+	list-style: none;
+	padding-right: 15px;
+}
+.banner .banner-timkiem ul li a
+{
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+
+}
+.banner .banner-timkiem 
+{
+	margin-left: 529px;
+	margin-top: 15px;
+}
+.banner .banner-logo
+{
+	margin-left: 79px;
+}
+.banner .banner-timkiem .banner-timkiemcon 
+{
+	margin-left: -40px;
+}
+#giohang
+{
+	margin-top: -4px;
+}
+#timkiem
+{
+	margin-left: -13px;
+}
+.banner .banner-timkiem > ul > li > a:hover
+{
+	text-decoration: underline;
+}
+#icon
+{
+	margin-left: -15px;
+	margin-top: -8px;
+}
+.header .menu > ul
+{
+	display: flex;
+	margin-top: 13px;
+}
+.header .menu > ul > li
+{
+	padding-right: 100px;
+	list-style: none;
+
+}
+.header .menu ul li a
+{
+	text-decoration: none;
+	color: black;
+	font-size: 13px;
+}
+.header .menu ul li a:hover
+{
+	text-decoration: underline;
+}
+#so
+{
+	margin-top: -8px;
+}
+.submenu
+{
+	display: none;
+	position: absolute;
+}
+.menu ul li:hover .submenu
+{
+	display: block;
+	background: #fff;
+	z-index: 2;
+}
+ul .submenu li
+{
+	list-style: none;
+	margin-left: -19px;
+	margin-right: 12px;
+	padding-top: 16px;
+}
+/**/
+/*main*/
+.middle > img
+{
+	margin-top: -14px;
+}
+/*thonng tin san pham*/
+.dssp
+{
+	width: 1000px;
+	margin-left: 215px;
+}
+.dssp h3
+{
+	margin-left: 331px;
+}
+.select
+{
+	margin-left: 672px;
+	margin-bottom: -31px;
+	margin-top: 10px;
+}
+.dssp1
+{
+	display: flex;
+}
+.sp1 img
+{
+	width: 222px;
+	padding-right: 10px;
+}
+/*dssp*/
+
+/*LISTSP*/
+.bosuutap
+{
+	margin-left: 340px;
+}
+.bosuutap h3
+{
+	margin-left: 279px;
+	margin-top: 47px;
+	padding-bottom: 36px;
+}
+.bosuutap .bst-list ul li a:hover
+{
+	border:1px solid black;
+}
+.list1
+{
+	width: 1000px;
+	margin-left: 179px;
+}
+.item2
+{
+	margin-left: 65px;
+	margin-top: 10px;
+}
+.item2 a
+{
+	text-decoration: none;
+	color: black;
+	font-size: 12px;
+}
+.item2 strong
+{
+	font-size: 13px;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+.xemsp
+{
+	margin-left: 400px;
+	margin-top: 33px;
+	margin-right: 390px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 1px solid black;
+	text-align: center;
+}
+.xemsp a
+{
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+	font-size: 13px;
+	display: block;
+}
+.xemsp:hover
+{
+	background: black;
+}
+.xemsp a:hover
+{
+	color: #fff;
+}
+/*trang*/
+.sott
+{
+	margin-left: 338px;
+}
+.sott ul 
+{
+	display: flex;
+}
+.sott ul li
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-right: 7px;
+	list-style: none;
+	border: 1px solid black;
+}
+.sott ul li:hover
+{
+	background: black;
+}
+.sott ul li a:hover
+{
+	color: #fff;
+}
+.sott ul li a
+{
+	text-decoration: none;
+	color: black;
+	font-size: 11px;
+}
+/*/trang*/
+/*/main*/
+.trangchu
+{
+	background: #f6f6f6;
+}
+.trangchu ul li
+{
+	display: inline;
+	font-size: 12px;
+	border-right: 1px solid black;
+}
+.trangchu ul li a
+{
+	text-decoration: none;
+	color: black;
+	padding-right: 10px;
+}
+.trangchu ul li:hover
+{
+	border-bottom: 1px solid black;
+}
+.trangchu ul strong
+{
+	font-size: 12px;
+}
+/**/
+.footer
+{
+/*	border-top: 2px groove #808080;*/
+	margin-top: 20px;
+	box-shadow: -5px -5px 10px #AAA;
+}
+.footer .footer-top
+{
+	display: flex;
+}
+.footer .footer-top .thongtin .sdt strong
+{
+	font-size: 10px;
+}
+.footer .footer-top .thongtin .sdt strong:hover
+{
+	border-bottom: 1px solid black;
+}
+.footer .footer-top .dvkh ul li
+{
+	list-style: none;
+	padding-top: 8px;
+}
+.footer .footer-top .dvkh ul li a
+{
+	text-decoration: none;
+	color: black;
+	font-size: 9px;
+}
+.footer .footer-top .dvkh ul li a:hover
+{
+	border-bottom: 1px solid black;
+}
+.footer .footer-top .dvkh2 ul li
+{
+	list-style: none;
+	padding-top: 1px;
+}
+.footer .footer-top .dvkh2 ul li a
+{
+	text-decoration: none;
+	color: black;
+	font-size: 9px;
+}
+.footer .footer-top .dvkh2 ul li a:hover
+{
+	border-bottom: 1px solid black;
+}
+.footer .footer-top .dvkh2
+{
+	margin-top: 27px
+}
+.footer .footer-top .dvkh
+{
+	margin-left: 91px;
+	font-size: 11px;
+}
+.footer .footer-top .dvkh h4
+{
+	margin-left: 38px;
+}
+.footer-bottom
+{
+	color:  #fff;
+	display: block;
+	background: black;
+	text-align: center;
+	height: 15px;
+	font-size: 12px;
+}
+.footer-bottom a
+{
+	color: #fff;
+	font-size: 12px;
+}
