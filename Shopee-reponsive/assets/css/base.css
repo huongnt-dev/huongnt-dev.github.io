@@ -1,0 +1,253 @@
+:root {
+    --primary-color: #fc5a32;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --border-color: #bdbdbd;
+    --star-gold-color: #ffce3e;
+
+    --header-height: 120px;
+    --navbar-height: 34px;
+    --with-height: calc(var(--header-height) - var(--navbar-height));
+    --header-sort-bar-height: 46px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    /* Hack */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Responsive */
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.grid__column-2 {
+    width: 16.6667%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.grid__column-2-4{
+    width: 20%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.grid__column-10 {
+    width: 83.3333%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from{
+        transform: scale(var(--growth-from));
+    }
+    to{        
+        transform: scale(var(--growth-to));
+    }
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.modal__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    animation: fadeIn linear 0.1s;
+}
+
+.modal__body {
+    --growth-from: 0.7;
+    --growth-to: 1;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    border-radius: 6px;
+    animation: growth linear 0.2s;
+}
+
+
+/* btn */
+
+.btn {
+    min-width: 124px;
+    height: 36px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+    line-height: 1.6rem;
+    border-radius: 3px;
+    color: var(--text-color);
+    background-color: var(--white-color);
+}
+
+.btn.btn--normal:hover {
+    background-color: rgba(0, 0, 0, 0.05 );
+}
+
+.btn.btn--size-s {
+    height: 32px;
+    padding: 0 8px;
+    font-size: 1.2rem;
+}
+
+.btn.btn--primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+
+.btn.btn--disable {
+    cursor: default;
+    color: #949494;
+    background-color: #c3c3c3;
+}
+
+/* Select input */
+
+.select-input {
+    min-width: 200px;
+    background-color: var(--white-color);
+    height: 34px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    justify-content: space-between;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.select-input__label {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.select-input__icon {
+    font-size: 1.4rem;
+    color: rgb(131, 131, 131);
+    position: relative;
+    top: 1px;
+}
+
+.select-input:hover .select-input__list {
+    display: block;
+}
+
+.select-input__list {
+    position: absolute;
+    top: calc(100% + 1px);
+    right: 0;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    background-color: var(--white-color);
+    padding: 12px 16px;
+    border-radius: 2px;
+    animation: fadeIn linear 0.2s;
+    display: none;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.select-input__list::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    top: -2px;
+    right: 0;
+}
+
+.select-input__item-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color:  var(--text-color);
+    padding: 6px 0;
+    display: block;
+}
+
+.select-input__item-link:hover {
+    color: var(--primary-color);
+}
+
+/* pagination */
+
+.pagination {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
+
+.pagination-item {
+    margin: 0 10px;
+}
+
+.pagination-item--active .pagination-item__link {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 2px;
+}
+
+.pagination-item--active .pagination-item__link:hover {
+    background-color: #ff8567;
+}
+
+.pagination-item__link {
+    --height: 30px;
+    text-decoration: none;
+    color: #919191;
+    height: var(--height);
+    line-height: var(--height);
+    min-width: 40px;
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+}
