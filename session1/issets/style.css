@@ -1,0 +1,101 @@
+v c/* reset css */
+*{
+    margin :0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* cau hỏi 
+1. vị trí 
+2. màu sắc
+3.hình dáng(tròn, vuông, .....)
+4. màu sắc
+ */
+ html{
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .wrapper{
+
+
+ }
+
+ .header{
+    background-color: black;
+    height: 46px;;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+ }
+ .nav{
+    display: inline-block;
+ }
+
+.nav li{
+    display: inline-block;
+    position: relative;
+}
+
+.nav > li:hover > a,
+.nav .subnav li:hover a
+{
+    background-color: rgb(161, 170, 194);
+    color: #000;
+    display: block;
+}
+
+.nav > li > a{
+    color: #fff;
+}
+
+.nav li a{
+    padding: 0px 12px;
+    line-height: 46px;
+    text-decoration: none;
+}
+
+.nav li:hover .subnav {
+    display: block;
+}
+
+.nav .subnav{
+    display: none;
+    position:absolute;
+    min-width: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.subnav li{
+    display: block;
+}
+.nav .nav-dow{
+    font-size: 8px;
+}
+.subnav li a{
+    color: #000;
+}
+.header .search-top{
+    float:right;
+}
+.search-top .nav-search{
+    color: #fff;
+    line-height: 46px;
+    cursor: pointer;
+}
+.slider{
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('https://www.w3schools.com/w3images/chicago.jpg') top center/ cover no-repeat;
+
+ }
+
+ .content{
+
+
+ }
+
+ .footer{
+
+
+ }

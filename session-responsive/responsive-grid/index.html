@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./issets/css/grid.css">
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: aqua;
+        }
+        .course{
+            height: 259px;
+            background-color: orange;
+            text-align: center;
+            color: aliceblue;
+        }
+        .course h1{
+            line-height: 259px;
+        }
+
+        .row-test{
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid wide container">
+        <div class="row row-test">
+            <div class="col l-6 c-12">
+                <div class="course">
+                    <h1>Course1</h1>
+                </div>
+            </div>
+            <div class="col l-6 c-12">
+                <div class="course">
+                    <h1>Course2</h1>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>
