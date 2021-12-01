@@ -1,0 +1,38 @@
+.h-input {
+    border: none;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 12px;
+    padding-left: 16px;
+    border-radius: 4px;
+    color: var(--black-color);
+    border: 1px solid #bbb;
+    font-size: 13px;
+    outline: unset;
+}
+
+.h-input::placeholder {
+    color: #bbb;
+    font-size: 11px;
+}
+
+.h-input:focus {
+    border: 1px solid #019160;
+}
+
+.h-input.h-input--error {
+    border: 1px solid #ff4747;
+}
+
+.h-input-search {
+    background-image: url(../../content/icon/search.png);
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+    background-size: 16px 16px;
+    padding-left: 40px;
+}
+
+.h-input-search::placeholder {
+    font-size: 12px;
+    padding-right: 8px;
+}

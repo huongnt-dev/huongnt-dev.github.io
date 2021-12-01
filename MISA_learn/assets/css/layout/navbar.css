@@ -1,0 +1,53 @@
+.navbar {
+    width: 226px;
+    border-right: 2px solid #e5e5e5;
+}
+
+.h-logo-box {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.h-toggle {
+    margin-left: 4px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../../content/img/toggle.png);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    margin-top: -4px;
+}
+
+.h-logo-page {
+    margin-left: 10px;
+}
+
+.h-logo-page__img {
+    height: 32px;
+}
+
+.h-navbar__list {
+    list-style: none;
+    margin-left: 16px;
+}
+
+.h-navbar__link {
+    display: block;
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.h-navbar__link:hover {
+    color: var(--primary-color);
+}
+
+.h-navbar__img-icon {
+    width: 22px;
+    margin-right: 8px;
+}

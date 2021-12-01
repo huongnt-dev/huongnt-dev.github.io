@@ -1,0 +1,45 @@
+.h-btn {
+    padding: 0 24px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--white-color);
+    min-width: 100px;
+    font-size: 13px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.h-btn:hover {
+    background-color: #2FBE8E;
+}
+
+.h-btn:active {
+    background-color: #01B075;
+}
+
+.h-btn-seconds{
+    background-color: #fff;
+    color: var(--black-color);
+    border: 1px solid #bbb;
+    text-align: center;
+}
+
+.h-btn-seconds:hover {
+    background-color: #e9ebee;
+    border: 1px solid #e9ebee;
+}
+
+.h-btn-seconds:active {
+    background-color: var(--primary-color);
+    border: var(--primary-color);
+    color: var(--white-color);
+}
+.h-btn-icon{
+    padding: 0 16px;
+}
+
+.h-btn__icon {
+    margin-right: 8px;
+}

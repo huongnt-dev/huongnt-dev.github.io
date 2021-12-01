@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+    <link rel="stylesheet" href="../assets/content/font/fontawesome-5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/common/base.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/layout/layout.css">
+</head>
+<body>
+    <div class="page">
+        <div class="navbar">
+            <div class="h-logo-box">
+                <div class="h-toggle"></div>
+                <div class="h-logo-page">
+                    <img src="../assets/content/cukcuk-logo.png" alt="" class="h-logo-page__img">
+                </div>
+            </div>
+            <ul class="h-navbar__list">
+                <li class="h-navbar__item">
+                    <a href="#" class="h-navbar__link">
+                        <img src="../assets/content/icon/dashboard.png" alt="" class="h-navbar__img-icon">
+                        Tổng quan
+                    </a>
+                </li>
+                <li class="h-navbar__item">
+                    <a href="#" class="h-navbar__link">
+                        <img src="../assets/content/icon/report.png" alt="" class="h-navbar__img-icon">
+                        Báo cáo
+                    </a>
+                </li>
+                <li class="h-navbar__item">
+                    <a href="#" class="h-navbar__link">
+                        <img src="../assets/content/icon/dashboard.png" alt="" class="h-navbar__img-icon">
+                        Mua hàng
+                    </a>
+                </li>
+                <li class="h-navbar__item">
+                    <a href="#" class="h-navbar__link">
+                        <img src="../assets/content/icon/dic-employee.png" alt="" class="h-navbar__img-icon">
+                        Danh mục nhân viên
+                    </a>
+                </li>
+                <li class="h-navbar__item">
+                    <a href="#" class="h-navbar__link">
+                        <img src="../assets/content/icon/dic-employee.png" alt="" class="h-navbar__img-icon">
+                        Danh mục nhân viên
+                    </a>
+                </li>
+                <li class="h-navbar__item">
+                    <a href="#" class="h-navbar__link">
+                        <img src="../assets/content/icon/setting.png" alt="" class="h-navbar__img-icon">
+                        Thiết lập hệ thống
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="h-main">
+            <div class="header">
+                <div class="h-select">
+                    <span class="h-select__label">Nhà hàng Biển đông</span>
+                    <i class="h-select__icon fa fa-angle-down"></i>
+                    <ul class="h-select__list">
+                        <li class="h-select__list-item">
+                            Nhà Hàng biển Nam
+                        </li>
+                        <li class="h-select__list-item">
+                            Nhà nghỉ dưỡng
+                        </li>
+                        <li class="h-select__list-item">
+                            Nhà nghỉ dưỡng
+                        </li>
+                        <li class="h-select__list-item">
+                            Nhà nghỉ dưỡng
+                        </li>
+                    </ul>
+                </div>
+                <div class="h-header__user">
+                    <img src="../assets/content/icon/avatar-default.png" alt="" class="h-header__user-img">
+                    <div class="h-header__user-name">Nguyễn Tất Hướng</div>
+                    <a href="" class="h-header__option">
+                        <img src="../assets/content/icon/option.png" alt="" class="h-header__option-img">
+                    </a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="h-home-filter">
+                    <div class="h-home-filter__heading">
+                        <h3 class="h-home-filter__heading-text">
+                            Danh sách nhân viên
+                        </h3>
+                        <button class="h-btn h-btn-icon" id="btnAddEmployee">
+                            <i class="fas fa-user-plus h-btn__icon"></i>Thêm nhân viên
+                        </button>
+                    </div>
+                    <div class="h-home-filter__page">
+                        <div class="h-home-filter__page-left">
+                            <input type="text" name="" id="" class="h-input h-input-search h-home-filter__input-search" placeholder="Tìm kiếm theo tên">
+                            <div class="h-select h-home-filter__select">
+                                <span class="h-select__label">Tất Cả phòng ban</span>
+                                <i class="h-select__icon fa fa-angle-down"></i>
+                                <ul class="h-select__list">
+                                    <li class="h-select__list-item h-home-filter__select-item">
+                                        Phòng nhân sự
+                                    </li>
+                                    <li class="h-select__list-item h-home-filter__select-item">
+                                        Phòng đào tạo
+                                    </li>
+                                    <li class="h-select__list-item h-home-filter__select-item">
+                                        Phòng công nghệ
+                                    </li>
+                                    <li class="h-select__list-item h-home-filter__select-item">
+                                        Phòng marketing
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="h-select h-home-filter__select">
+                                <span class="h-select__label">Tất cả vị trí</span>
+                                <i class="h-select__icon fa fa-angle-down"></i>
+                                <ul class="h-select__list">
+                                    <li class="h-select__list-item h-home-filter__select-item">
+                                        Giám đốc
+                                    </li>
+                                    <li class="h-select__list-item h-home-filter__select-item">
+                                        Thu ngân
+                                    </li>
+                                    <li class="h-select__list-item h-home-filter__select-item">
+                                        Nhân viên marketing
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="h-home-filter__page-right" style="display: flex; align-items: center;">
+                            <button id="btnDelete" class="h-btn h-btn-icon" style="margin-right: 12px;"><i class="fas fa-user-times"></i> Xóa</button>
+                            <button class="h-home-filter__page-refresh js-btn-popup" onclick="loadData()">
+                                <img src="../assets/content/icon/refresh.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="h-home-table">
+                        <table class="h-table" id="tableEmployee">
+                            <thead>
+                                <tr>
+                                    <th class="text-align-left" style="min-width: 120px">Mã Nhân viên</th>
+                                    <th class="text-align-left" style="min-width: 150px">Họ và tên</th>
+                                    <th class="text-align-left" style="min-width: 70px">Giới tính</th>
+                                    <th class="text-align-center">Ngày sinh</th>
+                                    <th class="text-align-left">Điện thoại</th>
+                                    <th class="text-align-left">Email</th>
+                                    <th class="text-align-left" style="min-width: 70px">Chức vụ</th>
+                                    <th class="text-align-left">Phòng ban</th>
+                                    <th class="text-align-left">Địa chỉ</th>
+                                    <th class="text-align-right" style="min-width: 150px">Mức lương cơ bản</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="h-page-nav h-home-pagination">
+                        <div class="h-page-nav__left">
+                            Hiển thị
+                            <span class="h-page-nav__left-quantity">01-20/123</span>
+                            lao động
+                        </div>
+                        <ul class="h-page-nav__center">
+                            <li class="h-page-nav__item">
+                                <a href="" class="h-page-nav__item-link">
+                                    <img src="../assets/content/icon/btn-firstpage.svg" alt="" class="h-page-nav__item-img">
+                                </a>
+                            </li>
+                            <li class="h-page-nav__item">
+                                <a href="" class="h-page-nav__item-link">
+                                    <img src="../assets/content/icon/btn-prev-page.svg" alt="" class="h-page-nav__item-img">
+                                </a>
+                            </li>
+                            <li class="h-page-nav__item">
+                                <a href="" class="h-page-nav__item-link h-page-nav__item-link-number h-page-nav__item-link-number--active">1</a>
+                            </li>
+                            <li class="h-page-nav__item">
+                                <a href="" class="h-page-nav__item-link h-page-nav__item-link-number">2</a>
+                            </li>
+                            <li class="h-page-nav__item">
+                                <a href="" class="h-page-nav__item-link h-page-nav__item-link-number">3</a>
+                            </li>
+                            <li class="h-page-nav__item">
+                                <a href="" class="h-page-nav__item-link h-page-nav__item-link-number">4</a>
+                            </li>
+                            <li class="h-page-nav__item">
+                                <a href="" class="h-page-nav__item-link h-page-nav__item-link-number">5</a>
+                            </li>
+                            
+                            <li class="h-page-nav__item">
+                                <a href="" class="h-page-nav__item-link">
+                                    <img src="../assets/content/icon/btn-next-page.svg" alt="" class="h-page-nav__item-img">
+                                </a>
+                            </li>
+                            <li class="h-page-nav__item">
+                                <a href="" class="h-page-nav__item-link">
+                                    <img src="../assets/content/icon/btn-lastpage.svg" alt="" class="h-page-nav__item-img">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="h-page-nav__right">
+                            <span class="h-page-nav__right-quantity">20</span>
+                            lao động/trang 
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-overlay" id="js-overlay">
+                <div class="h-popup" id="js-popup">
+                    <div class="h-popup__close js-popup__close" id="js-popup-close">
+                        <img src="../assets/content/icon/x.svg" alt="">
+                    </div>
+                    <div class="h-popup__main">
+                        <h4 class="h-popup__heading">Đóng Form thông tin chung</h4>
+                        <div class="h-popup__content">
+                            <div class="h-popup__content-icon h-popup__content-icon--error">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <span class="h-popup__content-text">
+                                Bạn có chắc muốn đóng form nhâp <span class="h-popup__content-bold">"Thông tin chung thủ tục 603"</span>
+                                hay không?
+                            </span>
+                        </div>
+                    </div>
+                    <div class="h-popup__footer">
+                        <button class="h-btn h-btn-seconds h-btn-popup-seconds" id="btnCancel">Hủy</button>
+                        <button class="h-btn h-btn-popup" id="btnSave">Lưu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--diaglog-->
+    <div class="dialog" id="js-dialog">
+        <div class="dialog-background"></div>
+        <div class="dialog-content">
+            <div class="dialog-head">
+                <div class="dialog-title">THÔNG TIN NHÂN VIÊN</div>
+                <div class="dialog-close" id="js-dialog__close">&#x2715;</div>
+            </div>
+            <div class="dialog-body">
+                <div class="image-user">
+                    <img src="../assets/content/img/default-avatar.jpg" width="170" alt="">
+
+                </div>
+                <div class="info-user">
+                    <div class="item-user">A.THÔNG TIN CHUNG:</div>
+                    <hr />
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Mã nhân viên(<span style="color: red;">*</span>)</label>
+                            <input id="txtEmployeeCode" type="text" class="h-input h-dialog__input"/>
+                        </div>
+                        <div class="col">
+                            <label for="">Họ và tên(<span style="color: red;">*</span>)</label>
+                            <input id="txtFullName" type="text" class="h-input h-dialog__input">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Ngày sinh</label>
+                            <input id="dtDateOfBirth" type="date" class="h-date" />
+                        </div>
+                        <div class="col">
+                            <label for="">Giới tính</label>
+                            <select class="h-cbb" name="" id="cbGenderName">
+                                <option value="1">Nam</option>
+                                <option value="0">Nữ</option>
+                                <option value="null">Không xác định</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Số CMTND/ Căn cước(<span style="color: red;">*</span>)</label>
+                            <input id="IdentityNumber" type="text" class="h-input h-dialog__input" />
+                        </div>
+                        <div class="col">
+                            <label for="">Ngày cấp</label>
+                            <input id="IdentityDate" type="date" class="h-date">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Nơi cấp</label>
+                            <input id="txtAddress" type="text" class="h-input h-dialog__input" class="h-iput" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Email(<span style="color: red;">*</span>)</label>
+                            <input id="txtEmail" type="text" class="h-input h-dialog__input" class="h-iput" />
+                        </div>
+                        <div class="col">
+                            <label for="">Số điện thoại(<span style="color: red;">*</span>)</label>
+                            <input id="txtPhoneNumber" type="text" class="h-input h-dialog__input">
+                        </div>
+                    </div>
+                    <div class="item-user" style="margin-top: 8px;">B.THÔNG TIN CÔNG VIỆC:</div>
+                    <hr />
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Vị trí hiện tại</label>
+                            <select class="h-cbb" name="" id="cbPositionName">
+                                <option value="">Giám đốc</option>
+                                <option value="">Nhân viên Marketting</option>
+                                <option value="">Thu ngân</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="">Phòng ban</label>
+                            <select class="h-cbb" name="" id="cbDepartmentName">
+                                <option value="">Phòng đào tạo</option>
+                                <option value="">Phòng công nghệ</option>
+                                <option value="">Phòng Marketting</option>
+                                <option value="">Phòng nhân sự</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Mã số thuế cá nhân</label>
+                            <input id="PersonalTaxCode" type="text" class="h-input h-dialog__input" />
+                        </div>
+                        <div class="col">
+                            <label for="">Mức lương cơ bản</label>
+                            <input id="txtSalary" type="text" class="h-input h-dialog__input">
+                        </div>
+
+                    </div>
+                    <div class="row ">
+                        <div class="col">
+                            <label for="">Ngày ra nhập công ty</label>
+                            <input id="CreatedDate" type="date" class="h-date" />
+                        </div>
+                        <div class="col">
+                            <label for="">Tình trạng công việc</label>
+                            <select class="h-cbb" name="" id="WorkStatus">
+                                <option value="0">Đang làm việc</option>
+                                <option value="1">Đã nghỉ việc</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dialog-footer">
+                <button type="submit" id="js-dialog-cancel" class="cancel">Huỷ</button>
+                <button type="submit" class="save" id="js-btnSave">Lưu</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- các thư viện js -->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <!-- các js dùng chung -->
+    <script src="../assets/js/page/employee.js"></script>
+    <!-- các js dùng riêng -->
+    <!-- <script src="../assets/js/popup.js"></script> -->
+</body>
+</html>

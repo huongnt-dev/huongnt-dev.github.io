@@ -1,0 +1,44 @@
+.h-select {
+    position: relative;
+    cursor: pointer;
+}
+
+.h-select:hover .h-select__list{
+    display: block;
+}
+
+.h-select__label {
+    font-weight: 700;
+}
+
+.h-select__icon {
+    margin-left: 10px;
+}
+
+.h-select__list {
+    display: none;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 100%;
+    padding: 10px 10px 10px 14px;
+    border-radius: 4px;
+    background-color: var(--white-color);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.h-select__list-item {
+    padding: 6px 0;
+    font-size: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.h-select__list-item:last-child {
+    border-bottom: none;
+}
+
+.h-select__list-item:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}

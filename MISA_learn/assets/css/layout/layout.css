@@ -1,0 +1,7 @@
+.page {
+    display: flex;
+}
+
+.h-main {
+    width: calc(100% - 226px);
+}

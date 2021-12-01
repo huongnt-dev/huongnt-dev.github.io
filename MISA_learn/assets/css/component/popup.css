@@ -1,0 +1,103 @@
+.h-popup {
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px;
+    background-color: var(--white-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeIn ease 0.1s;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.h-popup__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 4px 4px 2px;
+    border-radius: 0 4px 0 4px;
+}
+
+.h-popup__close:hover {
+    background-color: rgb(233, 232, 232);
+    cursor: pointer;
+}
+
+.h-popup__main{
+    padding: 24px;
+}
+
+.h-popup__heading {
+    margin: 0 0 24px;
+    font-size: 15px;
+}
+
+.h-popup__content {
+    display: flex;
+    align-items: center;
+}
+
+.h-popup__content-icon {
+    width: 34px;
+    height: 34px;
+    background-color: rgb(233, 232, 232);
+    border-radius: 50%;
+    line-height: 34px;
+    text-align: center;
+}
+
+.h-popup__content-icon--error {
+    color: #ff6900;
+}
+
+.h-popup__content-text {
+    font-size: 13px;
+    margin-left: 10px;
+}
+.h-popup__content-bold {
+    font-weight: 700;
+}
+
+.h-popup__footer {
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(233, 232, 232);
+    align-items: center;
+}
+
+.h-btn-popup {
+    margin-right: 24px;
+}
+
+.h-btn-popup-seconds {
+    margin-right: 16px;
+    background-color: transparent;
+    border: none;
+}
+
+.h-btn-popup-seconds:hover {
+    background-color: #ccc;
+    border: none;
+}
+
+.h-overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    animation: fadeIn ease-in 0.1s;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
